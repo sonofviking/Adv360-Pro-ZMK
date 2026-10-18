@@ -26,20 +26,20 @@
          Each key outputs the Dvorak char unshifted, and the char in
          parentheses when shift is held.                      */
 
-      mm_dlr:  mm_dlr  { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(N4)>;      morph = <&kp LS(GRAVE)>;  mods = <(MOD_LSFT | MOD_RSFT)>; }; /* $ (~) */
-      mm_plus: mm_plus { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(EQUAL)>;    morph = <&kp N1>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* + (1) */
-      mm_lb:   mm_lb   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(LBKT)>;     morph = <&kp N2>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* [ (2) */
-      mm_lc:   mm_lc   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(LBKT)>;     morph = <&kp N3>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* { (3) */
-      mm_lp:   mm_lp   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(N9)>;       morph = <&kp N4>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ( (4) */
-      mm_amp:  mm_amp  { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(N7)>;       morph = <&kp N5>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* & (5) */
-      mm_eq:   mm_eq   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp EQUAL>;       morph = <&kp N6>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* = (6) */
-      mm_rp:   mm_rp   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(N0)>;       morph = <&kp N7>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ) (7) */
-      mm_rc:   mm_rc   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(RBKT)>;     morph = <&kp N8>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* } (8) */
-      mm_rb:   mm_rb   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(RBKT)>;     morph = <&kp N9>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ] (9) */
-      mm_star: mm_star { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(N8)>;       morph = <&kp N0>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* * (0) */
-      mm_excl: mm_excl { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(N1)>;       morph = <&kp LS(N5)>;     mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ! (%) */
-      mm_bar:  mm_bar  { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(BSLH)>;     morph = <&kp GRAVE>;      mods = <(MOD_LSFT | MOD_RSFT)>; }; /* | (`) */
-      mm_at:   mm_at   { compatible = "zmk,mod-morph"; #binding-cells = <0>; binding = <&kp LS(N2)>;       morph = <&kp LS(N6)>;     mods = <(MOD_LSFT | MOD_RSFT)>; }; /* @ (^) */
+      mm_dlr:  mm_dlr  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N4)>, <&kp LS(GRAVE)>;  mods = <(MOD_LSFT | MOD_RSFT)>; }; /* $ (~) */
+      mm_plus: mm_plus { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(EQUAL)>, <&kp N1>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* + (1) */
+      mm_lb:   mm_lb   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(LBKT)>, <&kp N2>;        mods = <(MOD_LSFT | MOD_RSFT)>; }; /* [ (2) */
+      mm_lc:   mm_lc   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(LBKT)>, <&kp N3>;        mods = <(MOD_LSFT | MOD_RSFT)>; }; /* { (3) */
+      mm_lp:   mm_lp   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N9)>, <&kp N4>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ( (4) */
+      mm_amp:  mm_amp  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N7)>, <&kp N5>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* & (5) */
+      mm_eq:   mm_eq   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp EQUAL>, <&kp N6>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* = (6) */
+      mm_rp:   mm_rp   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N0)>, <&kp N7>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ) (7) */
+      mm_rc:   mm_rc   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(RBKT)>, <&kp N8>;       mods = <(MOD_LSFT | MOD_RSFT)>; }; /* } (8) */
+      mm_rb:   mm_rb   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(RBKT)>, <&kp N9>;       mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ] (9) */
+      mm_star: mm_star { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N8)>, <&kp N0>;         mods = <(MOD_LSFT | MOD_RSFT)>; }; /* * (0) */
+      mm_excl: mm_excl { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N1)>, <&kp LS(N5)>;     mods = <(MOD_LSFT | MOD_RSFT)>; }; /* ! (%) */
+      mm_bar:  mm_bar  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(BSLH)>, <&kp GRAVE>;      mods = <(MOD_LSFT | MOD_RSFT)>; }; /* | (`) */
+      mm_at:   mm_at   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N2)>, <&kp LS(N6)>;     mods = <(MOD_LSFT | MOD_RSFT)>; }; /* @ (^) */
     };
 
   keymap {
